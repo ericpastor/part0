@@ -1,0 +1,17 @@
+title 0.5 Single page app
+
+browser->server: https://studies.cs.helsinki.fi/exampleapp/spa
+
+server->browser: HTML, css, JavaScript
+
+note over browser:
+JavaScript (spa.js)
+end note
+
+browser<->server: data
+
+note over browser:
+execute JavaScript from server
+to tackle task
+end note
+

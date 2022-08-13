@@ -1,0 +1,37 @@
+title 0.4 New note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+
+note over server: 
+server respons code 302 (URL redirect) 
+server asks browser to do a new HTTP GET 
+request to Location: /notes
+end note
+
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+server-->browser: main.css
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+server-->browser: main.js
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+server-->browser: data.json
+
+browser->server: HTTP POST <form action ="/exampleapp/new_note" method ="POST">
+
+note over browser: 
+Data is sent as the body of the POST-request.
+end note
+
+note over server: 
+access the data by accessing the req.body
+field of the request object req
+The server creates a new note object
+end note
+
+
+
